@@ -1,0 +1,20 @@
+package application.applikationsschicht.Spielzug;
+
+import java.util.ArrayList;
+
+public class Spielfeld {
+	
+	private ArrayList<Spielfigur> spielFiguren = new ArrayList();
+
+
+
+	public boolean spielFigurBewegen(int spieler, int figur, int aZ) {
+		return false;
+	}
+
+
+	public int[][] spielfiguren(int aktiverSpieler) {
+		int figuren[][] = null;
+		return figuren;
+	}
+}

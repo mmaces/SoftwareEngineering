@@ -1,0 +1,35 @@
+package application.applikationsschicht.Spielzug;
+
+import java.util.ArrayList;
+
+public class Spielfeld {
+	Spielfigur sP;
+	
+	public Spielfeld(){
+		for(int i = 0 ; i< 4 ;i++){
+			for(int j = 48 ; j<51;j++){
+				sP = new Spielfigur(i, j);
+				spielFiguren.add(sP);
+			}
+		}
+	}
+	
+	
+	/**
+	 * @supplierCardinality 6..12
+	 */
+	
+	private ArrayList<Spielfigur> spielFiguren = new ArrayList();
+
+
+
+	public boolean spielFigurBewegen(int spieler, int figur, int aZ) {
+		return false;
+	}
+
+
+	public int[][] spielfiguren(int aktiverSpieler) {
+		int figuren[][] = null;
+		return figuren;
+	}
+}

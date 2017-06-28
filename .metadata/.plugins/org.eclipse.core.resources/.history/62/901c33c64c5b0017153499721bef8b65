@@ -1,0 +1,11 @@
+package application.applikationsschicht.Spielzug;
+
+
+public class Controller implements Observer{
+	
+	@Override
+	public void update(Zustaende zustand) {
+		// TODO Auto-generated method stub
+		
+	}
+}

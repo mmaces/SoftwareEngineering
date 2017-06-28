@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhj2rg8yhs-2nxui6">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="Class Diagram1"/>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Model">
+			<property name="bounds" value="415,415,200,101"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.praesentationsschicht.Controller">
+			<property name="bounds" value="575,155,261,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.praesentationsschicht.Controller:lnkModel">
+				<property name="sourceAnchor" value="600,240"/>
+				<property name="targetAnchor" value="600,420"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.praesentationsschicht.View">
+			<property name="bounds" value="155,155,241,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

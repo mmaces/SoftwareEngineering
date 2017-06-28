@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhj31i1aa66gp1sd">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="opening_changes_store_strategy=store&#10;Show Simple Interfaces=false"/>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Interface1">
+			<property name="bounds" value="35,15,421,221"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:application.applikationsschicht.Spielzug.Interface1">
+				<property name="bounds" value="-21,30,62,14"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Zustaende">
+			<property name="bounds" value="1375,175,267,306"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:e_field:src:application.applikationsschicht.Spielzug.Zustaende.Value1">
+				<property name="bounds" value="53,4,0,0"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:application.applikationsschicht.Spielzug.Zustaende.Wuerfel2">
+			</reference>
+			<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Zustaende.Enum1">
+				<property name="bounds" value="44,2,0,0"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Spielfeld">
+			<property name="bounds" value="775,575,200,146"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="collapsedCompartments" value=""/>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Spielfeld:spielFiguren">
+				<property name="sourceAnchor" value="970,580"/>
+				<property name="targetAnchor" value="1096,480"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:application.applikationsschicht.Spielzug.Spielfeld:spielFiguren">
+					<property name="bounds" value="970,551,12,18"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:application.applikationsschicht.Spielzug.Spielfeld:spielFiguren">
+					<property name="bounds" value="1062,465,26,18"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Spielfeld:sP">
+				<property name="sourceAnchor" value="963,580"/>
+				<property name="targetAnchor" value="1096,474"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Logic">
+			<property name="bounds" value="135,448,200,246"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="collapsedCompartments" value="Property20"/>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Logic:zustand">
+				<property name="sourceAnchor" value="340,531"/>
+				<property name="targetAnchor" value="1380,469"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Logic:wuerfel">
+				<property name="sourceAnchor" value="166,453"/>
+				<property name="targetAnchor" value="166,372"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Logic:sF">
+				<property name="sourceAnchor" value="340,639"/>
+				<property name="targetAnchor" value="780,639"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Class1:feld">
+				<property name="sourceAnchor" value="171,45"/>
+				<property name="targetAnchor" value="190,45"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:application.applikationsschicht.Spielzug.Class1:feld">
+					<property name="bounds" value="133,-23,13,25"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:application.applikationsschicht.Spielzug.Class1:feld">
+					<property name="bounds" value="160,-33,30,25"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.applikationsschicht.Spielzug.Logic:Interface1">
+				<property name="sourceAnchor" value="240,453"/>
+				<property name="targetAnchor" value="240,241"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Logic:f">
+				<property name="sourceAnchor" value="340,527"/>
+				<property name="targetAnchor" value="735,354"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Wuerfel">
+			<property name="bounds" value="-5,277,193,90"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Spielfigur">
+			<property name="bounds" value="1091,375,102,118"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.main">
+			<property name="bounds" value="710,15,102,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.View">
+			<property name="bounds" value="555,135,176,230"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.View:f">
+				<property name="sourceAnchor" value="736,287"/>
+				<property name="targetAnchor" value="735,287"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.applikationsschicht.Spielzug.View:Observer">
+				<property name="sourceAnchor" value="571,140"/>
+				<property name="targetAnchor" value="571,120"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Observer">
+			<property name="bounds" value="475,35,102,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Subject">
+			<property name="bounds" value="411,317,145,132"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Subject:obs">
+				<property name="sourceAnchor" value="537,322"/>
+				<property name="targetAnchor" value="537,120"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:application.applikationsschicht.Spielzug.Subject:obs">
+					<property name="bounds" value="540,294,12,18"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:application.applikationsschicht.Spielzug.Subject:obs">
+					<property name="bounds" value="590,102,26,18"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Fassade">
+			<property name="bounds" value="730,235,145,174"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Fassade:logic">
+				<property name="sourceAnchor" value="735,358"/>
+				<property name="targetAnchor" value="340,531"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:application.applikationsschicht.Spielzug.Fassade:Subject">
+				<property name="sourceAnchor" value="735,386"/>
+				<property name="targetAnchor" value="561,386"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Fassade:zustand">
+				<property name="sourceAnchor" value="880,327"/>
+				<property name="targetAnchor" value="1380,327"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:application.applikationsschicht.Spielzug.Fassade:Interface1">
+				<property name="sourceAnchor" value="735,240"/>
+				<property name="targetAnchor" value="461,240"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Controller">
+			<property name="bounds" value="375,615,136,160"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:application.applikationsschicht.Spielzug.Controller:Observer">
+				<property name="sourceAnchor" value="485,620"/>
+				<property name="targetAnchor" value="485,120"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Spielzug.Controller:f">
+				<property name="sourceAnchor" value="516,628"/>
+				<property name="targetAnchor" value="735,401"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

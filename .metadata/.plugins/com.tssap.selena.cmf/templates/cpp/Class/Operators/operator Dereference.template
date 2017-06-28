@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Operator "Dereference"</b>
+
+Creates a convenient implementation of the standard Dereference operator.
+]]>
+</description>
+<method
+	name="operator Dereference"><![CDATA[
+public:
+    const ${className}& operator*() const;
+]]>
+</method>
+</template>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="-tdsqjuj27do6m394j7en">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Spielbrett"/>
+		<node uin="1g64yj27e2jm4-vwxjvw">
+			<property name="$metaclass" value="Note"/>
+			<property name="$name" value="Note1"/>
+		</node>
+		<node uin="svpf2fj27e2vu0-wfkq3x">
+			<property name="$metaclass" value="Note"/>
+		</node>
+		<link uin="ieje0rj2ha6v9dzexcmp">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="supplierCardinality" value="0 .. 4"/>
+			<participant referencedUin="design:node:::-tdsqjuj27do6m394j7en" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27e5nia4l7tmd" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rj2ha6xks-b97rwj">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="supplierCardinality" value="0 .. 4"/>
+			<property name="clientCardinality" value="0 .. 1"/>
+			<participant referencedUin="design:node:::-tdsqjuj27do6m394j7en" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27e5ugd4ek81g" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rj2hapsl9-ua8ug8">
+			<property name="associatesType" value="composition"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="composition" value=""/>
+			<property name="aggregation" value=""/>
+			<property name="clientCardinality" value="0 .. 1"/>
+			<participant referencedUin="design:node:::-tdsqjuj27do6m394j7en" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj2haerzj8pzhp8" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="-tdsqjuj27e5ae75dsq5o">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Spielfigur"/>
+	</node>
+	<node uin="-tdsqjuj27e5nia4l7tmd">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Wissensanzeiger"/>
+	</node>
+	<node uin="-tdsqjuj27e5ugd4ek81g">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Wissenkategorie"/>
+	</node>
+	<node uin="-tdsqjuj27e8t14wgsupc">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Spieler"/>
+		<link uin="ieje0rj2ha572r-6acxtc">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="0 .. 1"/>
+			<property name="supplierCardinality" value="1 .. 3"/>
+			<participant referencedUin="design:node:::-tdsqjuj27e8t14wgsupc" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27e5ae75dsq5o" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rj2haf4bi-d6gv1q">
+			<property name="associatesType" value="composition"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="composition" value=""/>
+			<property name="aggregation" value=""/>
+			<property name="clientCardinality" value="0 .. 4"/>
+			<participant referencedUin="design:node:::-tdsqjuj27e8t14wgsupc" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj2haerzj8pzhp8" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="-tdsqjuj27ea6ldar6tk8">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Spielfeld"/>
+		<link uin="ieje0rj2hab6crymaofc">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="0 .. 1"/>
+			<property name="supplierCardinality" value="0 .. 2"/>
+			<participant referencedUin="design:node:::-tdsqjuj27ea6ldar6tk8" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27e5ae75dsq5o" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rj2hanzrg-pdkgw0">
+			<property name="associatesType" value="aggregation"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="aggregation" value=""/>
+			<property name="clientCardinality" value="44"/>
+			<participant referencedUin="design:node:::-tdsqjuj27ea6ldar6tk8" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27do6m394j7en" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="-tdsqjuj2ha2h1pvs29g5">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Würfel"/>
+		<link uin="ieje0rj2ha3s5e-tzvdfw">
+			<property name="associatesType" value="composition"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="composition" value=""/>
+			<property name="aggregation" value=""/>
+			<participant referencedUin="design:node:::-tdsqjuj2ha2h1pvs29g5" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27do6m394j7en" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="-tdsqjuj2hacrg9-m4p1bo">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Heimatfeld"/>
+		<link uin="ieje0rj2hal8zx-clr47p">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="supplierCardinality" value="0 .. 1"/>
+			<property name="clientCardinality" value="0 .. 1"/>
+			<participant referencedUin="design:node:::-tdsqjuj2hacrg9-m4p1bo" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27e5ae75dsq5o" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rj2haow66-5qm6kq">
+			<property name="associatesType" value="aggregation"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="aggregation" value=""/>
+			<property name="clientCardinality" value="12"/>
+			<participant referencedUin="design:node:::-tdsqjuj2hacrg9-m4p1bo" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27do6m394j7en" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="-tdsqjuj2hacsyj-7q359y">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Startfeld"/>
+		<link uin="ieje0rj2hajbiz1sv1qz">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="supplierCardinality" value="0 .. 2"/>
+			<property name="clientCardinality" value="0 .. 1"/>
+			<participant referencedUin="design:node:::-tdsqjuj2hacsyj-7q359y" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27e5ae75dsq5o" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rj2han3bu-glnrv5">
+			<property name="associatesType" value="aggregation"/>
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="aggregation" value=""/>
+			<property name="clientCardinality" value="4"/>
+			<participant referencedUin="design:node:::-tdsqjuj2hacsyj-7q359y" role="Client"></participant>
+			<participant referencedUin="design:node:::-tdsqjuj27do6m394j7en" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="-tdsqjuj2haerzj8pzhp8">
+		<property name="$metaclass" value="Class20"/>
+		<property name="$name" value="Spiel"/>
+	</node>
+	<node uin="-yrgd8ej2hawdh6ntqabb">
+		<property name="$metaclass" value="SD20_Interaction"/>
+		<property name="$name" value="Spielvorbereitung"/>
+		<node uin="-y8nsowj2hazhbe-4zts0">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline2"/>
+			<property name="connectableElementName" value="System"/>
+			<node uin="c87hzvj2hbqlfo5bosdo">
+				<property name="$metaclass" value="SD20_ExecutionSpecification"/>
+				<property name="$name" value="SD20_ExecutionSpecification1"/>
+			</node>
+		</node>
+		<node uin="-y8nsowj2haz15b-g837r9">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline1"/>
+			<property name="connectableElementName" value="Spieler"/>
+			<node uin="l2gqtvj2hbqlfnd1z686">
+				<property name="$metaclass" value="SD20_Int_InvocationSpecification"/>
+				<property name="$name" value="SD20_Int_InvocationSpecification1"/>
+				<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvj2hbqlfo5bosdo:-y8nsowj2hazhbe-4zts0:-yrgd8ej2hawdh6ntqabb"/>
+				<property name="call_cachedSequenceNumber" value="1"/>
+				<property name="signalOrOperationName" value="Einstellungen festlegen: AnzahlSpieler, Spielvariante, Wissenskategorien, Farbzuordnung"/>
+				<node uin="rf4xatj2hbsp23-14jr38">
+					<property name="$metaclass" value="SD20_Int_Message_Argument"/>
+					<property name="$name" value="SD20_Int_Message_Argument1"/>
+					<property name="stringValue" value="AnzahlSpieler"/>
+				</node>
+				<node uin="rf4xatj2hbsp23-ed7l42">
+					<property name="$metaclass" value="SD20_Int_Message_Argument"/>
+					<property name="$name" value="SD20_Int_Message_Argument2"/>
+					<property name="stringValue" value="Spielvariante"/>
+				</node>
+				<node uin="rf4xatj2hbsp23-16ysf0">
+					<property name="$metaclass" value="SD20_Int_Message_Argument"/>
+					<property name="$name" value="SD20_Int_Message_Argument3"/>
+					<property name="stringValue" value="Wissenskategorien"/>
+				</node>
+				<node uin="rf4xatj2hbsp24-40vf7m">
+					<property name="$metaclass" value="SD20_Int_Message_Argument"/>
+					<property name="$name" value="SD20_Int_Message_Argument4"/>
+					<property name="stringValue" value="Farbzuordnungen"/>
+				</node>
+			</node>
+			<link uin="ieje0rj2hbqlfp7nospj">
+				<property name="$metaclass" value="SD20_Int_CommunicationLink"/>
+				<participant referencedUin="design:node:::-y8nsowj2haz15b-g837r9:-yrgd8ej2hawdh6ntqabb" role="Client"></participant>
+				<participant referencedUin="design:node:::-y8nsowj2hazhbe-4zts0:-yrgd8ej2hawdh6ntqabb" role="Supplier"></participant>
+			</link>
+		</node>
+	</node>
+	<node uin="-yrgd8ej2hbxo8l-d77j7s">
+		<property name="$metaclass" value="SD20_Interaction"/>
+		<property name="$name" value="Interaction"/>
+	</node>
+	<node uin="1gzh6sj2hby7208x5ue2">
+		<property name="$metaclass" value="SD20_Interaction"/>
+		<property name="$name" value="Interaction"/>
+	</node>
+	<node uin="2oz7y7j2hbze3nwikzqq">
+		<property name="$metaclass" value="SD20_Interaction"/>
+		<property name="$name" value="Ausschwärmen"/>
+		<node uin="tmksn4j2hbze3n-6x94m">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline2"/>
+			<property name="connectableElementName" value="System"/>
+			<link uin="ieje0rj2hcbnh8er2lu5">
+				<property name="$metaclass" value="SD20_Int_CommunicationLink"/>
+				<participant referencedUin="design:node:::tmksn4j2hbze3n-6x94m:2oz7y7j2hbze3nwikzqq" role="Client"></participant>
+				<participant referencedUin="design:node:::tmksn4j2hbze3n-6x94m:2oz7y7j2hbze3nwikzqq" role="Supplier"></participant>
+			</link>
+			<node uin="7x5rzxj2hcgjm9-u8wgif">
+				<property name="$metaclass" value="SD20_Int_MountingRegion"/>
+				<property name="$name" value="SD20_Int_MountingRegion1"/>
+				<link uin="ieje0rj2hcgjman5os0t">
+					<property name="$metaclass" value="SD20_Int_MountingLink"/>
+					<participant referencedUin="design:node:::7x5rzxj2hcgjm9-u8wgif:tmksn4j2hbze3n-6x94m:2oz7y7j2hbze3nwikzqq" role="Client"></participant>
+					<participant referencedUin="design:node:::7chx8lj2hcgdo3aj62wi:2oz7y7j2hbze3nwikzqq" role="Supplier"></participant>
+				</link>
+				<node uin="7x5rzxj2hcgjma7rlsrt">
+					<property name="$metaclass" value="SD20_Int_MountingRegion"/>
+					<property name="$name" value="SD20_Int_MountingRegion1"/>
+					<link uin="ieje0rj2hcgjmay7xcb5">
+						<property name="$metaclass" value="SD20_Int_MountingLink"/>
+						<participant referencedUin="design:node:::7x5rzxj2hcgjma7rlsrt:7x5rzxj2hcgjm9-u8wgif:tmksn4j2hbze3n-6x94m:2oz7y7j2hbze3nwikzqq" role="Client"></participant>
+						<participant referencedUin="design:node:::-yp8yhj2hcgdo5i1aqwl:7chx8lj2hcgdo3aj62wi:2oz7y7j2hbze3nwikzqq" role="Supplier"></participant>
+					</link>
+					<node uin="b43zb3j2hcgjmf-k82bcm">
+						<property name="$metaclass" value="SD20_ExecutionSpecification"/>
+						<property name="$name" value="SD20_ExecutionSpecification1"/>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node uin="5cb00oj2hbze3naymb3e">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline1"/>
+			<property name="connectableElementName" value="Spieler"/>
+			<node uin="7x5rzxj2hcgdo4m8hcxl">
+				<property name="$metaclass" value="SD20_Int_MountingRegion"/>
+				<property name="$name" value="SD20_Int_MountingRegion1"/>
+				<link uin="ieje0rj2hcgdo44apx9x">
+					<property name="$metaclass" value="SD20_Int_MountingLink"/>
+					<participant referencedUin="design:node:::7x5rzxj2hcgdo4m8hcxl:5cb00oj2hbze3naymb3e:2oz7y7j2hbze3nwikzqq" role="Client"></participant>
+					<participant referencedUin="design:node:::7chx8lj2hcgdo3aj62wi:2oz7y7j2hbze3nwikzqq" role="Supplier"></participant>
+				</link>
+				<node uin="7x5rzxj2hcgdo5-z0a2yu">
+					<property name="$metaclass" value="SD20_Int_MountingRegion"/>
+					<property name="$name" value="SD20_Int_MountingRegion1"/>
+					<node uin="eibgwvj2hcgjmfunbh09">
+						<property name="$metaclass" value="SD20_Int_InvocationSpecification"/>
+						<property name="$name" value="SD20_Int_InvocationSpecification1"/>
+						<property name="receiveExecutionSpecificationPuin" value="design:node:::b43zb3j2hcgjmf-k82bcm:7x5rzxj2hcgjma7rlsrt:7x5rzxj2hcgjm9-u8wgif:tmksn4j2hbze3n-6x94m:2oz7y7j2hbze3nwikzqq"/>
+						<property name="signalOrOperationName" value="Würfeln"/>
+						<property name="call_cachedSequenceNumber" value="1"/>
+					</node>
+					<link uin="ieje0rj2hcgdo5-nhzf1a">
+						<property name="$metaclass" value="SD20_Int_MountingLink"/>
+						<participant referencedUin="design:node:::7x5rzxj2hcgdo5-z0a2yu:7x5rzxj2hcgdo4m8hcxl:5cb00oj2hbze3naymb3e:2oz7y7j2hbze3nwikzqq" role="Client"></participant>
+						<participant referencedUin="design:node:::-yp8yhj2hcgdo5i1aqwl:7chx8lj2hcgdo3aj62wi:2oz7y7j2hbze3nwikzqq" role="Supplier"></participant>
+					</link>
+				</node>
+			</node>
+			<link uin="4elh4bj2hbze3o-1zbea5">
+				<property name="$metaclass" value="SD20_Int_CommunicationLink"/>
+				<participant referencedUin="design:node:::5cb00oj2hbze3naymb3e:2oz7y7j2hbze3nwikzqq" role="Client"></participant>
+				<participant referencedUin="design:node:::tmksn4j2hbze3n-6x94m:2oz7y7j2hbze3nwikzqq" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="7chx8lj2hcgdo3aj62wi">
+			<property name="$metaclass" value="SD20_CombinedFragment"/>
+			<property name="$name" value="SD20_CombinedFragment1"/>
+			<node uin="-yydlhsj2hcgdo4-en8l1k">
+				<property name="$metaclass" value="SD20_Int_OperatorHolder"/>
+				<property name="$name" value="SD20_Int_OperatorHolder1"/>
+				<property name="operator" value="loop"/>
+				<property name="arguments" value="1&lt;3"/>
+			</node>
+			<node uin="-yp8yhj2hcgdo5i1aqwl">
+				<property name="$metaclass" value="SD20_InteractionOperand"/>
+				<property name="$name" value="SD20_InteractionOperand1"/>
+			</node>
+		</node>
+	</node>
+	<node uin="2oz7y7j2hchsxh9mcwez">
+		<property name="$metaclass" value="SD20_Interaction"/>
+		<property name="$name" value="Spielzug"/>
+		<node uin="-y8nsowj2hcmrkr-qa4q13">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline3"/>
+			<property name="connectableElementName" value="Gegenspieler"/>
+			<node uin="l2gqtvj2hcn7s3-brhr6x">
+				<property name="$metaclass" value="SD20_Int_InvocationSpecification"/>
+				<property name="$name" value="SD20_Int_InvocationSpecification1"/>
+				<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvj2hcn7s4-m88wbi:tmksn4j2hchsxhz4b2nc:2oz7y7j2hchsxh9mcwez"/>
+				<property name="call_cachedSequenceNumber" value="4"/>
+				<property name="signalOrOperationName" value="Gegenfrage beantworten"/>
+			</node>
+			<link uin="ieje0rj2hcn7s9-4ki4ir">
+				<property name="$metaclass" value="SD20_Int_CommunicationLink"/>
+				<participant referencedUin="design:node:::-y8nsowj2hcmrkr-qa4q13:2oz7y7j2hchsxh9mcwez" role="Client"></participant>
+				<participant referencedUin="design:node:::tmksn4j2hchsxhz4b2nc:2oz7y7j2hchsxh9mcwez" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="tmksn4j2hchsxhz4b2nc">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline2"/>
+			<property name="connectableElementName" value="System"/>
+			<node uin="rja5zpj2hchsxh-ohynfb">
+				<property name="$metaclass" value="SD20_ExecutionSpecification"/>
+				<property name="$name" value="SD20_ExecutionSpecification1"/>
+			</node>
+			<node uin="c87hzvj2hcltnj-6ehpf3">
+				<property name="$metaclass" value="SD20_ExecutionSpecification"/>
+				<property name="$name" value="SD20_ExecutionSpecification2"/>
+			</node>
+			<node uin="c87hzvj2hcm93g-yvijqc">
+				<property name="$metaclass" value="SD20_ExecutionSpecification"/>
+				<property name="$name" value="SD20_ExecutionSpecification3"/>
+			</node>
+			<node uin="c87hzvj2hcn7s4-m88wbi">
+				<property name="$metaclass" value="SD20_ExecutionSpecification"/>
+				<property name="$name" value="SD20_ExecutionSpecification4"/>
+			</node>
+		</node>
+		<node uin="5cb00oj2hchsxh-htawwy">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline1"/>
+			<property name="connectableElementName" value="Spieler"/>
+			<node uin="dny9c5j2hchsxhyfhssg">
+				<property name="$metaclass" value="SD20_Int_InvocationSpecification"/>
+				<property name="$name" value="SD20_Int_InvocationSpecification1"/>
+				<property name="receiveExecutionSpecificationPuin" value="design:node:::rja5zpj2hchsxh-ohynfb:tmksn4j2hchsxhz4b2nc:2oz7y7j2hchsxh9mcwez"/>
+				<property name="signalOrOperationName" value="Würfeln"/>
+				<property name="returnValue" value="Augenzahl"/>
+				<property name="call_cachedSequenceNumber" value="1"/>
+			</node>
+			<node uin="l2gqtvj2hcltni-1063ts">
+				<property name="$metaclass" value="SD20_Int_InvocationSpecification"/>
+				<property name="$name" value="SD20_Int_InvocationSpecification2"/>
+				<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvj2hcltnj-6ehpf3:tmksn4j2hchsxhz4b2nc:2oz7y7j2hchsxh9mcwez"/>
+				<property name="signalOrOperationName" value="Wissenskategorie wählen"/>
+				<property name="call_cachedSequenceNumber" value="2"/>
+			</node>
+			<node uin="l2gqtvj2hcm93gl8pply">
+				<property name="$metaclass" value="SD20_Int_InvocationSpecification"/>
+				<property name="$name" value="SD20_Int_InvocationSpecification3"/>
+				<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvj2hcm93g-yvijqc:tmksn4j2hchsxhz4b2nc:2oz7y7j2hchsxh9mcwez"/>
+				<property name="signalOrOperationName" value="Frage beantworten"/>
+				<property name="call_cachedSequenceNumber" value="3"/>
+			</node>
+			<link uin="4elh4bj2hchsxh2k6arj">
+				<property name="$metaclass" value="SD20_Int_CommunicationLink"/>
+				<participant referencedUin="design:node:::5cb00oj2hchsxh-htawwy:2oz7y7j2hchsxh9mcwez" role="Client"></participant>
+				<participant referencedUin="design:node:::tmksn4j2hchsxhz4b2nc:2oz7y7j2hchsxh9mcwez" role="Supplier"></participant>
+			</link>
+		</node>
+	</node>
+</nodeSet>

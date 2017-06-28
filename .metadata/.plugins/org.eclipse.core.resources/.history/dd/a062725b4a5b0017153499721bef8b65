@@ -1,0 +1,121 @@
+package application.applikationsschicht.Spielzug;
+
+import javax.annotation.Generated;
+
+public class View  implements Observer{
+	
+	private Logic logic;
+	
+	public View(Logic logic){
+		this.logic = logic;
+	}
+
+	public void WaAufWuerfelKlick(int aktiverSpieler, Spielfeld aktuellesSpielFeld) {
+		int count;
+		
+		int[] figurenSpieler;
+				
+		System.out.println(getFarbe(aktiverSpieler) + " ist am Zug");
+		for(int i = 0; i< 4;i++){
+			count = 3;
+			figurenSpieler = aktuellesSpielFeld.spielfiguren(i);
+			
+			for(int j = 0 ; j < 3 ; j++){
+				if(figurenSpieler[j] > 47 ){
+					count--;
+				}
+			}
+			System.out.println(getFarbe(aktiverSpieler)+": "+count+" von 3 Figuren im Spiel: ");
+			
+			count = 1;
+			for(int j = 0 ; j < 3 ; j++){
+				if(figurenSpieler[j]<48){
+					System.out.println(getFarbe(aktiverSpieler)+count+" Feld "+figurenSpieler[j]);
+				}
+				
+			}
+			
+			System.out.println("Zum Würfeln drücken Sie „x“!");
+			
+		}			
+	}
+	
+
+	public void Wuerfel2(int aZ) {
+		System.out.println("Sie haben eine "+aZ+" gewürfelt, kein Spielzug möglich das System würfelt zum zweiten Mal.");
+	}
+
+	public void Wuerfel3(int aZ) {
+		System.out.println("Sie haben eine "+aZ+" gewürfelt, kein Spielzug möglich das System würfelt zum dritten Mal.");
+	} 
+	
+	public void Wuerfel4(int aZ) {
+		System.out.println("Sie haben eine "+aZ+" gewürfelt, kein Spielzug möglich.");
+	}
+
+	public void WaAufSF(int[] waehlbareSpielfiguren) {
+		System.out.println("Wählen sie eine Spielfigur. Zum Auswählen geben Sie aus Zahl 1 bis 3! Mögliche Auswahl:");
+		
+		for(int i = 0 ; i<3 ; i++){
+			if(waehlbareSpielfiguren[i] != -1){
+				System.out.println((i+1) + " " + waehlbareSpielfiguren[i] );
+			}
+		}
+		
+		System.out.println();
+		
+		
+	}
+
+	public void WaAufKategorie() {
+		System.out.println("Katergorie wählen ...");
+	}
+
+	public void NaechsterSpieler(int aktiverSpieler) {
+		System.out.println("Spieler "+getFarbe(aktiverSpieler)+ " ist jetzt dran mit Würfeln.");
+	}
+	
+	
+	private String getFarbe(int aktiverSpieler){
+		String text ;
+		
+		if(aktiverSpieler == 0){
+			text = "Rot";
+		}else if(aktiverSpieler == 1){
+			text = "Gelb";
+		}else if(aktiverSpieler == 2){
+			text = "grün";
+		}else{
+			text = "Blau";
+		}
+		
+		return text;
+	}
+
+
+	@Override
+	public void update(Zustaende zustand) {
+		if(zustand == Zustaende.NaechsterSpieler){
+			this.NaechsterSpieler(logic.getAktiverSpieler());
+		}
+		else if(zustand == Zustaende.WaAufKategorie){
+			this.WaAufKategorie();
+		}
+		else if(zustand == Zustaende.WaAufSF){
+			this.WaAufSF(waehlbareSpielfiguren);
+		}
+		else if(zustand == Zustaende.WaAufWuerfelKlick){
+			
+		}
+		else if(zustand == Zustaende.Wuerfel2){
+			
+		}
+		else if(zustand == Zustaende.Wuerfel3){
+			
+		}
+		else if(zustand == Zustaende.Wuerfel4){
+			
+		}
+		
+	}
+}

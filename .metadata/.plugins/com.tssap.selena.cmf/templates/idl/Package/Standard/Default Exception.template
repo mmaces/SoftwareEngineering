@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Default Exception pattern</b>
+
+This pattern creates the exception for your application.
+
+Parameters
+
+<b>exceptionName</b>
+  Name of generated union.
+]]>
+</description>
+<property
+	label="exceptionName"
+	name="exceptionName"
+	type="SimpleTypeName"
+	value="Exception1"/>
+<type
+	name="${exceptionName}"><![CDATA[
+exception ${exceptionName} {
+};
+]]>
+</type>
+</template>

@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Default Enumeration pattern</b>
+
+This pattern creates the enumeration for your application.
+
+Parameters
+
+<b>enumName</b>
+  Name of generated enumeration.
+]]>
+</description>
+<property
+	label="enumName"
+	name="enumName"
+	type="SimpleTypeName"
+	value="Enum1"/>
+<type
+	name="${enumName}"><![CDATA[
+/**
+ * enumeration
+ */
+enum ${enumName}
+{
+};
+]]>
+</type>
+</template>

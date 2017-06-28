@@ -1,0 +1,6 @@
+package application.applikationsschicht.Spielzug;
+
+public class Controller implements Observer{
+	
+	
+}

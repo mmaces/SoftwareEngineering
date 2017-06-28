@@ -1,0 +1,22 @@
+package application.applikationsschicht.Spielzug;
+public class Logic implements Interface1 {
+	
+	int anzahlSpieler = 2;
+	int aktiverSpieler = 0;
+	Zustaende zustand = Zustaende.WaAufWuerfelKlick;
+	boolean kollision;
+	
+
+
+	public int wuerfeln() {
+		return 0;
+	}
+	
+	public void ziehen(int Figur) {
+		return;
+	}
+
+	public void setNextPlayer(){
+		aktiverSpieler = (aktiverSpieler+1)%anzahlSpieler;
+	}
+}

@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+Creates an interface which represents a connection, within which is the close method declaration for closing the connection.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="MyConnection"/>
+<unit
+	name="${className}"
+	package=""><![CDATA[
+import javax.resource.ResourceException;
+
+/**
+ * Simple Connection interface.
+ */
+public interface ${className}
+{
+	/**
+	 * Closes connection.
+	 */
+	public void close() throws ResourceException;
+}
+]]>
+</unit>
+</template>

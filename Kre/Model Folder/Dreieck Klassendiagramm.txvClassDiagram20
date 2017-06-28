@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhj27dmmabf48b1k">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="Dreieck Klassendiagramm"/>
+		<reference referencedUin="design:view:::V1hexuhj27dn1r8jy4gme">
+			<property name="bounds" value="15,15,1061,601"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

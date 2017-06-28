@@ -1,0 +1,24 @@
+package application.applikationsschicht.Spielzug;
+
+import java.util.Scanner;
+
+public class Controller implements Observer{
+	
+	Fassade f;
+	Scanner sc = new Scanner(System.in);
+	
+	public Controller(Fassade f){
+		this.f = f;
+	}
+	
+	
+	
+	
+	
+	@Override
+	public void update(Zustaende zustand) {
+		if(zustand == Zustaende.WaAufWuerfelKlick){
+			;
+		}
+	}
+}

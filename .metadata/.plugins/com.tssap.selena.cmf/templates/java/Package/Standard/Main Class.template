@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Main</b>
+
+Creates a new class with the standard main method.
+
+Parameters
+
+<b>init</b>
+  Generate the main method body that initialises the class.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="Main"/>
+<property
+	label="init"
+	name="init"
+	type="Boolean"
+	value="true"/>
+<unit
+	name="${className}"
+	package=""><![CDATA[
+/**
+ * Main class.
+ */
+public class ${className}
+{
+	public static void main(String[] args)
+	{
+#if( $init )
+		try {
+			${className} _main = new ${className}();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.exit(1);
+		}
+		System.exit(0);
+		#end
+	}
+}
+]]>
+</unit>
+</template>

@@ -1,0 +1,11 @@
+package application.applikationsschicht.Spielzug;
+public class main {
+	public static void main(String [ ] args)
+	{
+		Logic l = new Logic();
+		Fassade f = new Fassade(Zustaende.WaAufWuerfelKlick, l);
+		
+		Controller contr = new Controller(f);
+		View view = new View(f);
+	}
+}

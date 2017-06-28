@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Adaptable</b>
+
+Creates a new class which implements eclipse IAdaptable interface.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="Class1"/>
+<unit
+	name="${className}"><![CDATA[
+import org.eclipse.core.runtime.IAdaptable;
+
+public class ${className} implements IAdaptable {
+}
+]]>
+</unit>
+</template>

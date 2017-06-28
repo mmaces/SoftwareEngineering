@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Wizard</b>
+
+Creates a new class which implements eclipse IWizard interface.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="Wizard1"/>
+<unit
+	name="${className}"><![CDATA[
+import org.eclipse.jface.wizard.IWizard;
+
+/**
+ * Wizard.
+ */
+public class ${className} implements IWizard {
+}
+]]>
+</unit>
+</template>

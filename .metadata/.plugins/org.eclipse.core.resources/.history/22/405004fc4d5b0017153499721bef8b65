@@ -1,0 +1,31 @@
+package application.applikationsschicht.Spielzug;
+
+import java.util.Scanner;
+
+public class Controller implements Observer{
+	
+	Fassade f;
+	Scanner sc = new Scanner(System.in);
+	
+	public Controller(Fassade f){
+		this.f = f;
+	}
+	
+	@Override
+	public void update(Zustaende zustand) {
+		if(zustand == Zustaende.NaechsterSpieler){
+			this.NaechsterSpieler(logic.getAktiverSpieler());
+		}
+		else if(zustand == Zustaende.WaAufKategorie){
+			this.WaAufKategorie();
+		}
+		else if(zustand == Zustaende.WaAufSF){
+			this.WaAufSF(logic.getAuswaehlbareFiguren());
+		}
+		else if(zustand == Zustaende.WaAufWuerfelKlick){
+			this.WaAufWuerfelKlick(logic.getAktiverSpieler(), logic.getsF());
+		}
+	
+		
+	}
+}

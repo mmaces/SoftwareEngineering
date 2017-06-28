@@ -1,0 +1,4 @@
+package application.applikationsschicht.Spielzug;
+public class Feld {
+	private Spielfigur spielfigur;
+}

@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+Creates a class that implements the javax.servlet.http.HttpSessionAttributeListener.  This class can listen to and respond when a HTTP Session attribute is added, removed or replaced.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="MyHttpSessionAttributeListener"/>
+<unit
+	name="${className}"
+	package=""><![CDATA[
+import javax.servlet.http.HttpSessionBindingEvent;
+import javax.servlet.http.HttpSessionAttributeListener;
+
+public class ${className} implements HttpSessionAttributeListener
+{
+	public ${className}() {
+	}
+
+	public void attributeAdded(HttpSessionBindingEvent hsbe) {
+	}
+
+	public void attributeRemoved(HttpSessionBindingEvent hsbe) {
+	}
+
+	public void attributeReplaced(HttpSessionBindingEvent hsbe) {
+	}   
+}
+]]>
+</unit>
+</template>

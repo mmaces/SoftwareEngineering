@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Observer.java&apos; to &apos;Design und Implementierung/src/application.applikationsschicht.Spielzug&apos;&#x0A;- Original project: &apos;Design und Implementierung&apos;&#x0A;- Destination element: &apos;Design und Implementierung/src/application.applikationsschicht.Spielzug&apos;&#x0A;- Original element: &apos;application.applikationsschicht.Observer.java&apos;&#x0A;- Update references to refactored element&#x0A;- Update fully qualified names in non-Java files" description="Move compilation unit" destination="/src&lt;application.applikationsschicht.Spielzug" element1="/src&lt;application.applikationsschicht{Observer.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="true" references="true" stamp="1498573611166" units="1" version="1.0"/>
+</session>

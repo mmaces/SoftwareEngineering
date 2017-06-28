@@ -1,0 +1,151 @@
+package application.applikationsschicht.Spielzug;
+public class Logic implements Interface1 {
+	
+	private Wuerfel wuerfel = new Wuerfel();
+	private Spielfeld sF = new Spielfeld();
+	private int aZ;
+	int[] auswaehlbareFiguren = {-1,-1,-1};
+	
+	Fassade f;
+	int anzahlSpieler = 3;
+	int aktiverSpieler = 0;
+	
+	
+	Zustaende zustand;
+	
+	boolean kollision;
+	
+	public void setFassade(Fassade f){
+		this.f = f;
+	}
+	
+
+	public Wuerfel getWuerfel() {
+		return wuerfel;
+	}
+
+	public Spielfeld getsF() {
+		return sF;
+	}
+
+	public int getaZ() {
+		return aZ;
+	}
+
+	public int getAnzahlSpieler() {
+		return anzahlSpieler;
+	}
+
+	public int getAktiverSpieler() {
+		return aktiverSpieler;
+	}
+
+	public Zustaende getZustand() {
+		return zustand;
+	}
+
+	public boolean isKollision() {
+		return kollision;
+	}
+	
+	public int[] getAuswaehlbareFiguren() {
+		return auswaehlbareFiguren;
+	}
+	
+	public void resetAuswaehlbareFiguren(){
+		auswaehlbareFiguren = {-1,-1,-1};
+	}
+
+	public void wuerfeln() {
+		
+		wuerfel.randomZahlerzeugen();
+		aZ = wuerfel.getAZ();
+		int[] figuren = sF.spielfiguren(aktiverSpieler);
+		
+		for(int i = 0 ; i < 3 ; i++){
+			if(!(aZ != 6 && figuren[i] > 47)){
+				auswaehlbareFiguren[i] = figuren[i];
+			}
+		}
+		
+		if(aZ != 6 && isAllHome(figuren)){
+			zustand = Zustaende.Wuerfel2;
+			f.setState(zustand);
+			wuerfel.randomZahlerzeugen();
+			aZ = wuerfel.getAZ();
+			
+			for(int i = 0 ; i < 3 ; i++){
+				if(!(aZ != 6 && figuren[i] > 47)){
+					auswaehlbareFiguren[i] = figuren[i];
+				}
+			}
+			
+			if(aZ != 6){
+				
+				zustand = Zustaende.Wuerfel3;
+				f.setState(zustand);
+				wuerfel.randomZahlerzeugen();
+				aZ = wuerfel.getAZ();
+				
+				for(int i = 0 ; i < 3 ; i++){
+					if(!(aZ != 6 && figuren[i] > 47)){
+						auswaehlbareFiguren[i] = figuren[i];
+					}
+				}
+				
+				if(aZ != 6){
+					setNextPlayer();
+					zustand = Zustaende.Wuerfel4;
+					f.setState(zustand);
+					zustand = Zustaende.NaechsterSpieler;
+					f.setState(zustand);
+					zustand = Zustaende.WaAufWuerfelKlick;
+					f.setState(zustand);
+				}else{
+					zustand = Zustaende.WaAufSF;
+					f.setState(zustand);
+				}
+			}else{
+				zustand = Zustaende.WaAufSF;
+				f.setState(zustand);
+			}
+		}else{
+			zustand = Zustaende.WaAufSF;
+			f.setState(zustand);
+		}
+		
+		
+	}
+
+	public void ziehen(int figur) {
+		int kollision;
+		int feldID = auswaehlbareFiguren[figur];
+		kollision = sF.spielFigurBewegen(aktiverSpieler, feldID, aZ);
+		if (kollision != -1){
+			zustand = Zustaende.WaAufKategorie;
+			f.setState(zustand);
+		}
+		else {
+			setNextPlayer();
+			zustand = Zustaende.NaechsterSpieler;
+			f.setState(zustand);
+			zustand = Zustaende.WaAufWuerfelKlick;
+			f.setState(zustand);
+		}
+	}
+
+	public void setNextPlayer(){
+		aktiverSpieler = (aktiverSpieler+1)%anzahlSpieler;
+	}
+	
+	
+	
+	private boolean isAllHome(int[] pFiguren){
+		for(int i = 0 ; i < 3 ; i++){
+			if(pFiguren[i] < 48){
+				return false;
+			}
+		}
+		return true;
+	}
+}

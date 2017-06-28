@@ -1,0 +1,7 @@
+
+package application.applikationsschicht.Spielzug;
+
+public interface Observer {
+
+	void update();
+}

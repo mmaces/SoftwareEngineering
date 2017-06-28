@@ -1,0 +1,29 @@
+package application.applikationsschicht.Spielzug;
+
+
+public class Controller implements Observer{
+	
+	Logic logic;
+	
+	public Controller(Logic logic){
+		this.logic = logic;
+	}
+	
+	@Override
+	public void update(Zustaende zustand) {
+		if(zustand == Zustaende.NaechsterSpieler){
+			this.NaechsterSpieler(logic.getAktiverSpieler());
+		}
+		else if(zustand == Zustaende.WaAufKategorie){
+			this.WaAufKategorie();
+		}
+		else if(zustand == Zustaende.WaAufSF){
+			this.WaAufSF(logic.getAuswaehlbareFiguren());
+		}
+		else if(zustand == Zustaende.WaAufWuerfelKlick){
+			this.WaAufWuerfelKlick(logic.getAktiverSpieler(), logic.getsF());
+		}
+	
+		
+	}
+}

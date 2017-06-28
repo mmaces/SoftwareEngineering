@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1493711872740" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.togethersoft.togetherxj.modeling.project.java20" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.togethersoft.togetherxj.uml.modeling"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="649" key="DIALOG_X_ORIGIN"/>
+		<item value="313" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="1|Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="578" key="DIALOG_HEIGHT"/>
+		<item value="699" key="DIALOG_X_ORIGIN"/>
+		<item value="143" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

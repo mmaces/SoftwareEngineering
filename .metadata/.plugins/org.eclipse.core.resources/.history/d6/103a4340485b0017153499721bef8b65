@@ -1,0 +1,19 @@
+package application.applikationsschicht.Spielzug;
+public class Wuerfel {
+	int AZ;
+
+
+
+	//public void nullSpeichern() {
+	//	AZ = 0;
+	//}
+
+
+	public int randomZahlerzeugen() {
+		AZ = (int)(Math.random() * 6) + 1;
+		return AZ;
+	}
+	
+	
+	
+}

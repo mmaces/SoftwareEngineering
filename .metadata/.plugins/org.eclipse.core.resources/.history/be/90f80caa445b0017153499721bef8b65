@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="29tauij2rg7svf-lo4bjt">
+		<property name="$metaclass" value="ComponentDiagram20"/>
+		<property name="$name" value="Komponenten"/>
+		<reference referencedUin="jdt:e_class:src:diagramme.fd">
+			<property name="bounds" value="75,175,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:diagramme.fd">
+				<property name="bounds" value="4,30,12,14"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:diagramme.Interface">
+			<property name="bounds" value="215,395,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:diagramme.Interface">
+				<property name="bounds" value="-17,30,54,14"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:diagramme.Subject">
+			<property name="bounds" value="255,175,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:diagramme.Subject">
+				<property name="bounds" value="-61,3,46,14"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::3gc674j2rg89unqmbv6b">
+			<property name="bounds" value="155,15,161,100"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::nsb2aj2rg89un-6a7r0v:3gc674j2rg89unqmbv6b">
+				<property name="bounds" value="144,93,14,14"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$port20InplaceEditing:design:node:::nsb2aj2rg89un-6a7r0v:3gc674j2rg89unqmbv6b">
+					<property name="bounds" value="-9,24,32,14"/>
+					<property name="$hidden" value="true"/>
+				</reference>
+				<reference referencedUin="design:link:::n8cqzyj2rg89unvuzq7f:nsb2aj2rg89un-6a7r0v:3gc674j2rg89unqmbv6b">
+					<property name="sourceAnchor" value="311,127"/>
+					<property name="targetAnchor" value="311,180"/>
+					<property name="bendpoints" value=""/>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::n1ga1uj2rg89un-8gruz3:3gc674j2rg89unqmbv6b">
+				<property name="bounds" value="-7,45,14,14"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:link:::ossg2nj2rg89un-fliea3:n1ga1uj2rg89un-8gruz3:3gc674j2rg89unqmbv6b">
+					<property name="sourceAnchor" value="153,70"/>
+					<property name="targetAnchor" value="90,180"/>
+					<property name="bendpoints" value="90,70"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+				<reference referencedUin="label:$port20InplaceEditing:design:node:::n1ga1uj2rg89un-8gruz3:3gc674j2rg89unqmbv6b">
+					<property name="bounds" value="-9,24,32,14"/>
+					<property name="$hidden" value="true"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::j5pwj2rg8cxs5zs2cu">
+			<property name="bounds" value="155,255,161,101"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::v6nj07j2rg8cxspjlxqd:j5pwj2rg8cxs5zs2cu">
+				<property name="bounds" value="76,94,14,14"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$port20InplaceEditing:design:node:::v6nj07j2rg8cxspjlxqd:j5pwj2rg8cxs5zs2cu">
+					<property name="bounds" value="-9,24,32,14"/>
+					<property name="$hidden" value="true"/>
+				</reference>
+				<reference referencedUin="design:link:::531idjj2rg8cxsmemrmf:v6nj07j2rg8cxspjlxqd:j5pwj2rg8cxs5zs2cu">
+					<property name="sourceAnchor" value="237,368"/>
+					<property name="targetAnchor" value="232,400"/>
+					<property name="bendpoints" value=""/>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::cy2y29j2rg8cxs-5luo3g:j5pwj2rg8cxs5zs2cu">
+				<property name="bounds" value="-7,43,14,14"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$port20InplaceEditing:design:node:::cy2y29j2rg8cxs-5luo3g:j5pwj2rg8cxs5zs2cu">
+					<property name="bounds" value="-9,24,32,14"/>
+					<property name="$hidden" value="true"/>
+				</reference>
+				<reference referencedUin="design:link:::x2d8kkj2rg8cxsjonh8m:cy2y29j2rg8cxs-5luo3g:j5pwj2rg8cxs5zs2cu">
+					<property name="sourceAnchor" value="153,311"/>
+					<property name="targetAnchor" value="89,200"/>
+					<property name="bendpoints" value="88,311"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::s98c6ij2rg8cxsqhlmkg:j5pwj2rg8cxs5zs2cu">
+				<property name="bounds" value="142,-7,14,14"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:$port20InplaceEditing:design:node:::s98c6ij2rg8cxsqhlmkg:j5pwj2rg8cxs5zs2cu">
+					<property name="bounds" value="28,-13,26,14"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+				<reference referencedUin="design:link:::k9a53tj2rg8cxs-vktemb:s98c6ij2rg8cxsqhlmkg:j5pwj2rg8cxs5zs2cu">
+					<property name="sourceAnchor" value="309,253"/>
+					<property name="targetAnchor" value="310,200"/>
+					<property name="bendpoints" value=""/>
+				</reference>
+				<reference referencedUin="design:link:::4g56caj2rg8cxs-angu5i:s98c6ij2rg8cxsqhlmkg:j5pwj2rg8cxs5zs2cu">
+					<property name="sourceAnchor" value="305,253"/>
+					<property name="targetAnchor" value="274,199"/>
+					<property name="bendpoints" value=""/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::ewqa4tj2rg8gsfi0ae7r">
+			<property name="bounds" value="155,455,161,100"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::60zm3yj2rg8gsf-q2l78u:ewqa4tj2rg8gsfi0ae7r">
+				<property name="bounds" value="76,-7,14,14"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:link:::psooxgj2rg8gsf-wro2kt:60zm3yj2rg8gsf-q2l78u:ewqa4tj2rg8gsfi0ae7r">
+					<property name="sourceAnchor" value="237,453"/>
+					<property name="targetAnchor" value="232,419"/>
+					<property name="bendpoints" value=""/>
+				</reference>
+				<reference referencedUin="label:$port20InplaceEditing:design:node:::60zm3yj2rg8gsf-q2l78u:ewqa4tj2rg8gsfi0ae7r">
+					<property name="bounds" value="-9,24,32,14"/>
+					<property name="$hidden" value="true"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Observer">
+			<property name="bounds" value="296,175,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:application.applikationsschicht.Observer">
+				<property name="bounds" value="39,3,54,14"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

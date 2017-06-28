@@ -1,0 +1,45 @@
+package application.applikationsschicht.Spielzug;
+public class Spielfigur {
+	/*
+	 * Spieler Nummern nach Farben
+	 * 0:Rot
+	 * 1:Gelb
+	 * 2:Grün
+	 * 3:Blau
+	 */
+	private int spieler;
+	
+	/*
+	 * 48 Felder zum Laufen, 3 HeimateFelder pro Farbe
+	 * ID von
+	 * 0 -> StartFeld Rot
+	 * 1-11 -> normale Felder
+	 * 
+	 * 12 -> Startfeld Gelb
+	 * 13-23 -> normale Felder
+	 * 
+	 * 24 -> Startfeld Grün
+	 * 25-35 -> normale Felder
+	 * 
+	 * 36 -> Startfeld Blau
+	 * 37-47 -> normale Felder
+	 * 
+	 * 48 - 49 - 50 HeimatFelder (mit Farbe von oben zum unterscheiden)
+	 */
+	private int FeldId;
+	
+	public int getSpieler() {
+		return spieler;
+	}
+	public void setSpieler(int spieler) {
+		this.spieler = spieler;
+	}
+	public int getFeldId() {
+		return FeldId;
+	}
+	public void setFeldId(int feldId) {
+		FeldId = feldId;
+	}
+	
+	
+}

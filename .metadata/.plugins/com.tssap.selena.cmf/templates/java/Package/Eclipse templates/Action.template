@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Action</b>
+
+Creates a new class which implements eclipse IAction interface.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="Action1"/>
+<unit
+	name="${className}"><![CDATA[
+import org.eclipse.jface.action.IAction;
+
+/**
+ * Action.
+ */
+public class ${className} implements IAction {
+}
+]]>
+</unit>
+</template>

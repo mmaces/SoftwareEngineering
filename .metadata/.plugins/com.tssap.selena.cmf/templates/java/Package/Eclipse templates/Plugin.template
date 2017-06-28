@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Plugin</b>
+
+Creates a new class which extends eclipse Plugin class.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="Plugin1"/>
+<unit
+	name="${className}"><![CDATA[
+import org.eclipse.core.runtime.Plugin;
+
+/**
+ * Plugin.
+ */
+public class ${className} extends Plugin {
+}
+]]>
+</unit>
+</template>

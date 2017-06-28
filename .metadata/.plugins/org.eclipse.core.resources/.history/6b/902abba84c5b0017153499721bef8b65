@@ -1,0 +1,41 @@
+package application.applikationsschicht.Spielzug;
+
+public class Fassade extends Subject implements Interface1 {
+	private Zustaende zustand;
+	private Logic logic;
+
+	public Fassade(Zustaende z, Logic l){
+		zustand = z;
+		logic = l;
+		logic.setFassade(this);
+	}
+	
+	@Override
+	public void wuerfeln() {
+		if(zustand == Zustaende.WaAufWuerfelKlick){
+			logic.wuerfeln();
+		}
+		this.informAll();
+		
+	}
+
+	@Override
+	public void ziehen(int SF) {
+		if (zustand == Zustaende.WaAufSF)
+			logic.ziehen(SF);
+		this.informAll();
+	}
+
+	@Override
+	protected void inform(Observer o) {
+		o.update(zustand);
+
+	}
+	
+	public void setState(Zustaende z){
+		zustand = z;
+		
+		this.informAll();
+	}
+
+}

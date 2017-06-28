@@ -1,0 +1,34 @@
+package application.applikationsschicht.Spielzug;
+
+import java.util.Scanner;
+
+public class Controller implements Observer{
+	
+	Fassade f;
+	Scanner sc = new Scanner(System.in);
+	
+	public Controller(Fassade f){
+		this.f = f;
+		f.attach(this);
+	}
+	
+	public void wuerfelKlick(){
+		String s = sc.next();
+		this.f.wuerfeln();
+	}
+	
+	public void auswahlSF(){
+		
+	}
+	
+	
+	
+	@Override
+	public void update(Zustaende zustand) {
+		if(zustand == Zustaende.WaAufWuerfelKlick){
+			wuerfelKlick();
+		}else if(zustand == Zustaende.WaAufSF){
+			auswahlSF();
+		}
+	}
+}

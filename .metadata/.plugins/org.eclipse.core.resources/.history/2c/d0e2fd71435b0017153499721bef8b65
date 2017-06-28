@@ -1,0 +1,36 @@
+
+package application.applikationsschicht.Spielzug;
+
+public enum Zustaende {
+
+	WaAufWuerfelKlick,Wuerfel2,Wuerfel3,Wuerfel4, WaAufSF,WaAufKategorie, WaAufGegenAntwort,WaAufAntwort, NaechsterSpieler;
+
+
+	public Zustaende getStateWaAufWuerfelKlick() {
+		return Zustaende.WaAufWuerfelKlick;
+	}
+	
+	public Zustaende getStateWuerfel2() {
+		return Zustaende.Wuerfel2;
+	}
+	
+	public Zustaende getStateWuerfel3() {
+		return Zustaende.Wuerfel3;
+	}
+	
+	public Zustaende getStateWuerfel4() {
+		return Zustaende.Wuerfel4;
+	}
+	
+	public Zustaende getStateWaAufSF() {
+		return Zustaende.WaAufSF;
+	}
+	
+	public Zustaende getStateNaechsterSpieler() {
+		return Zustaende.NaechsterSpieler;
+	}
+	public Zustaende getStateWaAufKategorie() {
+		return Zustaende.WaAufKategorie;
+	}
+
+}

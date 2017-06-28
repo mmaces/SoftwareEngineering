@@ -1,0 +1,9 @@
+package application.applikationsschicht.Spielzug;
+
+	
+	@Override
+	public void update(Zustaende zustand) {
+		// TODO Auto-generated method stub
+		
+	}
+}

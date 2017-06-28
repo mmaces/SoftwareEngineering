@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Default Structure pattern</b>
+
+This pattern creates the structure for your application.
+
+Parameters
+
+<b>structName</b>
+  Name of generated structure.
+]]>
+</description>
+<property
+	label="structName"
+	name="structName"
+	type="SimpleTypeName"
+	value="Struct1"/>
+<type
+	name="${structName}"><![CDATA[
+struct ${structName} {
+};
+]]>
+</type>
+</template>

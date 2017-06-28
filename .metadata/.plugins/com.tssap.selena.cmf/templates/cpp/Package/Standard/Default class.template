@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Default Class pattern</b>
+
+This pattern creates the default class for your application.
+
+Parameters
+
+<b>className</b>
+  Name of generated class.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="Class1"/>
+<type
+	name="${className}"><![CDATA[
+class ${className} {
+};
+]]>
+</type>
+</template>

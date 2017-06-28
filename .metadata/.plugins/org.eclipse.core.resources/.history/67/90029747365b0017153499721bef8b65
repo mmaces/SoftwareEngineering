@@ -1,0 +1,64 @@
+package application.applikationsschicht.Spielzug;
+
+import java.util.ArrayList;
+
+public class Spielfeld {
+	Spielfigur sP;
+	
+	public Spielfeld(){
+		for(int i = 0 ; i< 4 ;i++){
+			for(int j = 48 ; j<51;j++){
+				sP = new Spielfigur(i, j);
+				spielFiguren.add(sP);
+			}
+		}
+	}
+	
+	
+	/**
+	 * @supplierCardinality 6..12
+	 */
+	
+	private ArrayList<Spielfigur> spielFiguren = new ArrayList();
+
+
+
+	public boolean spielFigurBewegen(int spieler, int feldId, int aZ) {
+		int feldNr;
+		
+		for(int i = 0 ; i < spielFiguren.size();i++){
+			if(spielFiguren.get(i).getSpieler()==spieler && spielFiguren.get(i).getFeldId() == feldId ){
+				if(feldId > 47){
+					if(spieler == 0){
+						feldNr = 0;
+					}else if (spieler == 1){
+						feldNr = 12;
+					}else if (spieler == 2){
+						feldNr = 24;
+					}else if (spieler == 3){
+						feldNr = 36;
+					}
+					spielFiguren.get(i).setFeldId(feldNr);
+					
+				}else{
+					spielFiguren.get(i).setFeldId((feldId+aZ)%48);
+				}
+				return true;
+			}
+		}
+		return false;
+	}
+
+
+	public int[] spielfiguren(int aktiverSpieler) {
+		int figuren[] = {0,0,0};
+		
+		for(int i = 0; i<spielFiguren.size() ; i++){
+			if(spielFiguren.get(i).getSpieler() == aktiverSpieler){
+				figuren[i%3] = spielFiguren.get(i).getFeldId();
+			}
+		}
+		
+		return figuren;
+	}
+}

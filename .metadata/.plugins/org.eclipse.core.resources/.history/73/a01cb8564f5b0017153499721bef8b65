@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhj2rg8yhs-2nxui6">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="Class Diagram1"/>
+		<property name="__options" value="Show Simple Interfaces=false"/>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Model">
+			<property name="bounds" value="335,515,200,101"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:application.applikationsschicht.Model:lnkObserver">
+				<property name="sourceAnchor" value="350,520"/>
+				<property name="targetAnchor" value="350,442"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.praesentationsschicht.Controller">
+			<property name="bounds" value="575,155,261,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:application.praesentationsschicht.Controller:Observer">
+				<property name="sourceAnchor" value="610,240"/>
+				<property name="targetAnchor" value="360,341"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.praesentationsschicht.View">
+			<property name="bounds" value="135,155,241,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:application.praesentationsschicht.View:Observer">
+				<property name="sourceAnchor" value="275,240"/>
+				<property name="targetAnchor" value="275,341"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:diagramme.ISubject">
+			<property name="bounds" value="675,335,200,164"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:diagramme.ISubject:observers">
+				<property name="sourceAnchor" value="680,381"/>
+				<property name="targetAnchor" value="360,381"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:diagramme.ISubject:observers">
+					<property name="bounds" value="657,353,13,25"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:diagramme.ISubject:observers">
+					<property name="bounds" value="370,353,30,25"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:application.applikationsschicht.Spielzug.Observer">
+			<property name="bounds" value="155,336,200,101"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:application.applikationsschicht.Spielzug.Observer">
+				<property name="bounds" value="-17,30,54,14"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+Creates a class that implements the javax.servlet.ServletContextAttributeListener.  This class can respond to Servlet context events that involve an attribute being added, removed or replaced.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="MyServletContextAttributeListener"/>
+<unit
+	name="${className}"
+	package=""><![CDATA[
+import javax.servlet.ServletContextAttributeListener;
+import javax.servlet.ServletContextAttributeEvent;
+
+public class ${className} implements ServletContextAttributeListener
+{
+	public ${className}() {
+	}
+
+	public void attributeAdded(javax.servlet.ServletContextAttributeEvent event) {
+	}
+
+	public void attributeRemoved(javax.servlet.ServletContextAttributeEvent event) {
+	}
+
+	public void attributeReplaced(javax.servlet.ServletContextAttributeEvent event) {
+	}   
+}
+]]>
+</unit>
+</template>

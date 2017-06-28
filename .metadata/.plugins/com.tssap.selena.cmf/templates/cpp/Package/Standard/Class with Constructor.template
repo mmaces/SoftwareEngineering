@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+<b>Class with constructors pattern</b>
+
+This pattern creates the class with default constructor, copy constructor
+and virtual destructor for your application.
+
+Parameters
+
+<b>className</b>
+  Name of generated class.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="Class1"/>
+<type
+	name="${className}"><![CDATA[
+class ${className} {
+  public:    
+    ${className}() {}
+    ${className}(const ${className}& X) {}
+    virtual ~${className}() {}
+};
+]]>
+</type>
+</template>

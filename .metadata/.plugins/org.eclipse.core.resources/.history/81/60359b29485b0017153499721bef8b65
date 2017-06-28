@@ -1,0 +1,7 @@
+package application.applikationsschicht.Spielzug;
+public interface Interface1 {
+
+	public int[] wuerfeln();
+
+	public void ziehen(int SF);
+}

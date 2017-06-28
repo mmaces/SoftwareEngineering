@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<template>
+<description><![CDATA[
+Creates an interface which represents a connection factory.  This connection factory is used within the JNDI namespace to get the Enterprise Information Systems (EIS) connections.
+]]>
+</description>
+<property
+	label="className"
+	name="className"
+	type="SimpleTypeName"
+	value="MyConnectionFactory"/>
+<unit
+	name="${className}"
+	package=""><![CDATA[
+import java.io.Serializable;
+import javax.resource.Referenceable;
+import javax.resource.ResourceException;
+
+/**
+ * Simple Conection Factory Interface.
+ */
+public interface ${className} extends Serializable, Referenceable
+{
+     /**
+     * @return Connection instance.
+     */
+     public Object getConnection() throws ResourceException;
+}
+]]>
+</unit>
+</template>
